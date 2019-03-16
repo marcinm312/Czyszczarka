@@ -38,7 +38,6 @@ namespace Usuwarka
                         string[] files = Directory.GetFiles(line);
                         foreach (string file in files)
                         {
-                            Console.WriteLine(file);
                             FileInfo fi = new FileInfo(file);
                             //Sprawdzam czy plik jest starszy niż ilość dni zdefiniowana w pliku
                             if (fi.LastWriteTime < DateTime.Now.AddDays(-days))
@@ -49,6 +48,7 @@ namespace Usuwarka
                                     FileStream fs = new FileStream(scriptStartTime + "_LogFile.txt", FileMode.Append, FileAccess.Write);
                                     StreamWriter sw = new StreamWriter(fs);
                                     string logline = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " Data pliku: " + fi.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss") + " " + file;
+                                    Console.WriteLine(logline);
                                     sw.WriteLine(logline);
                                     sw.Close();
                                 }

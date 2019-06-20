@@ -69,6 +69,7 @@ namespace Usuwarka
                 Console.WriteLine("Something didn't quite work correctly: {0}", e.Message);
             }
             //Console.ReadKey();
+            //
         }
     }
 }

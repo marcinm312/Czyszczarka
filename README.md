@@ -1,6 +1,6 @@
 # Program czyszczący pliki we wskazanych folderach
 
-Aby program zadziałał poprawnie, należy obok pliku wykonywalnego EXE utworzyć dwa pliki:
+Aby program zadziałał poprawnie, należy obok pliku wykonywalnego EXE utworzyć dwa pliki (przykład w folderze **CompiledApplicationAndExampleConfiguration**):
 * Days.txt - definiuje, jak stare pliki ma usuwać program (np. po wpisaniu liczby 32, program usunie pliki starsze niż 32 dni, wystarczy wpisać samą liczbę);
 * Directories.txt - definiuje ścieżki, w których mają być usuwane pliki (każda ścieżka w osobnej linii).
 
